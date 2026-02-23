@@ -1,0 +1,42 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmeccaHookManager", "EmeccaHookManager\EmeccaHookManager.csproj", "{A704F536-32F7-4FB5-BA21-A67BA76D429E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{7D4B93D3-D665-44EF-9567-66A13A255106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A704F536-32F7-4FB5-BA21-A67BA76D429E}.Release|x64.ActiveCfg = Release|Any CPU
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Debug|x64.ActiveCfg = Debug|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Debug|x64.Build.0 = Debug|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Release|Any CPU.ActiveCfg = Release|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Release|Mixed Platforms.Build.0 = Release|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Release|x64.ActiveCfg = Release|x64
+		{7D4B93D3-D665-44EF-9567-66A13A255106}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

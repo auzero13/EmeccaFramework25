@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C261DC21-8ABC-4DC1-9DCC-70895B2E266A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emecca.Medical.Dicom</RootNamespace>
+    <AssemblyName>EmeccaDicom</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\Emecca\Lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.Find, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.Find.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.Move, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.Move.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.Router, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.Router.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.StorageCommit, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.StorageCommit.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.Store, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.Store.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.AddIn.StoreProxy, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.AddIn.StoreProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Cmp, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Codecs.Cmp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Gif, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Codecs.Gif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Tif, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Codecs.Tif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Dicom.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.AddIn, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Dicom.AddIn.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Annotations, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Dicom.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Common, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Dicom.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scp, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Dicom.Scp.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Dicom.Scu, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Dicom.Scu.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.MediaWriter, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.MediaWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Medical.Workstation.Client, Version=17.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LEAD\dotnet4\x64\Leadtools.Medical.Workstation.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\EmeccaPacesQueryClient.cs" />
+    <Compile Include="Command\CBase.cs" />
+    <Compile Include="Command\CFind.cs" />
+    <Compile Include="Command\CMove.cs" />
+    <Compile Include="Command\CStore.cs" />
+    <Compile Include="Command\DicomPing.cs" />
+    <Compile Include="Command\MwlFind.cs" />
+    <Compile Include="EmeccaDicomEngine.cs" />
+    <Compile Include="EmeccaMediaUtility.cs" />
+    <Compile Include="Model\CFindStudyRootDicomDataSet.cs" />
+    <Compile Include="Model\CFindSeriesRootDicomDataSet.cs" />
+    <Compile Include="Model\CFindInstanceRootDicomDataSet.cs" />
+    <Compile Include="Model\ModalityWorklistDicomDataSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EmeccaDicomUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EmeccaDataAccess\EmeccaDataAccess\EmeccaDataAccess.csproj">
+      <Project>{400240B6-6EEC-4BF7-A080-36DEA9F4566B}</Project>
+      <Name>EmeccaDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EmeccaExpress\EmeccaExpress\EmeccaExpress.csproj">
+      <Project>{3FED4423-423B-4435-91BE-4DE89C4C59F1}</Project>
+      <Name>EmeccaExpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EmeccaFramework\EmeccaFramework\EmeccaFramework.csproj">
+      <Project>{16E18218-EE33-4922-8C02-2960E3430703}</Project>
+      <Name>EmeccaFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

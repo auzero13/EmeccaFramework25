@@ -1,0 +1,39 @@
+# .gitignore for .NET and SVN coexistence
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.dbmdl
+*.opendb
+*.ide/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+[Xx]64/
+[Xx]86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]inaries/
+[Pp]ublish/
+
+# SVN Metadata
+.svn/
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Backup files
+*.bak
+*.rar
+*.zip
+*.7z
