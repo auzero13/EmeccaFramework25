@@ -215,14 +215,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\EmeccaDataAccess\EmeccaDataAccess\EmeccaDataAccess.csproj">
-      <Project>{400240b6-6eec-4bf7-a080-36dea9f4566b}</Project>
-      <Name>EmeccaDataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\EmeccaFramework\EmeccaFramework\EmeccaFramework.csproj">
-      <Project>{16e18218-ee33-4922-8c02-2960e3430703}</Project>
-      <Name>EmeccaFramework</Name>
-    </ProjectReference>
+    <Reference Include="EmeccaDataAccess">
+      <HintPath>C:\Emecca\Lib\EmeccaDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="EmeccaFramework">
+      <HintPath>C:\Emecca\Lib\EmeccaFramework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

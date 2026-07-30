@@ -1,4 +1,4 @@
-﻿using DevExpress.Utils;
+using DevExpress.Utils;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using Emecca.Framework.Common;
@@ -393,7 +393,7 @@ namespace Emecca.Express.Common
 
             if (item != null)
             {
-                item.Appearance.Font = new Font("PMingLiU", EmeccaMainFrame.getInstance().setMenuFontSize());
+                item.Appearance.Font = new Font(EmeccaMainFrame.getInstance().getMenuFontName(), EmeccaMainFrame.getInstance().setMenuFontSize());
             }
 
             //遞歸循環處理子節點

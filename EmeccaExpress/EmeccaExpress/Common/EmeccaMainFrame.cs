@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Reflection;
 using System.Windows.Forms;
@@ -149,6 +149,16 @@ namespace Emecca.Express.Common
 
             return fontSize;
         }
+
+        public string getMenuFontName()
+        {
+            string fontName = EmeccaRuntime.getInstance().getVariable("FontName") as string;
+            if (!string.IsNullOrEmpty(fontName))
+                return fontName;
+            if (this.Font != null && !string.Equals(this.Font.Name, "PMingLiU", StringComparison.OrdinalIgnoreCase) && !string.Equals(this.Font.Name, "PMingLiu", StringComparison.OrdinalIgnoreCase) && !string.Equals(this.Font.Name, "新細明體", StringComparison.OrdinalIgnoreCase))
+                return this.Font.Name;
+            return "微軟正黑體";
+        }
         public BarSubItem getLookAndFeelBarItem_NMS()  //2026 steve 切換佈景
         {
             try
@@ -173,7 +183,7 @@ namespace Emecca.Express.Common
                     string systemSkinPath = EmeccaRuntime.getInstance().getVariable("SystemSkin").ToString();
 
                     // 字型設定
-                    Font font = new Font("PMingLiu", fontSize);
+                    Font font = new Font(getMenuFontName(), fontSize);
 
                     // 邏輯判斷：如果包含 Skin_Black，則使用自定義對應邏輯
                     if (skinList.Contains("Skin_Black"))
@@ -281,7 +291,7 @@ namespace Emecca.Express.Common
                     string strSkinName = "";
                     string strSkinPath = "";
                     string strSkinGlyph = EmeccaRuntime.getInstance().getVariable("SystemSkin").ToString();
-                    Font font = new Font("PMingLiu", fontSize);
+                    Font font = new Font(getMenuFontName(), fontSize);
                     if (arr.Contains("Skin_Black"))
                     {
                         if (!string.IsNullOrWhiteSpace(strSkinGlyph) && !strSkinGlyph.StartsWith("Skin_"))
@@ -736,7 +746,7 @@ public Object createObject(string clazz)
                     option_item.Checked = option_item.Caption.Equals(lnfMain.LookAndFeel.SkinName);
                 }
 
-                Font font = new System.Drawing.Font("PMingLiu", fontSize);
+                Font font = new System.Drawing.Font(getMenuFontName(), fontSize);
                 tmdiLayoutMain.AppearancePage.Header.Font = font;
                 tmdiLayoutMain.AppearancePage.HeaderActive.Font = font;
                 tmdiLayoutMain.AppearancePage.HeaderHotTracked.Font = font;
