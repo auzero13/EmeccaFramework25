@@ -63,6 +63,19 @@ namespace Emecca.Express.Common
           
         }
 
+        /// <summary>
+        /// 最佳化表單拖曳與減少畫面閃爍 (WS_CLIPCHILDREN)
+        /// </summary>
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.Style |= 0x02000000; // WS_CLIPCHILDREN: 排除子視窗區域，避免拖曳移動時重複繪製背景
+                return cp;
+            }
+        }
+
         private void getFormLocation()
         {
             EmeccaProfile profile = EmeccaRuntime.getInstance().getVariable((EmeccaRuntime.FrameworkReservedVariableLeading + ".EmeccaProfile")) as EmeccaProfile;
